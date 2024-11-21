@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 2px solid green;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #00b0f0;
+            color: black;
+        }
+        .header {
+            background-color: #ffd966;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            border: 2px solid orange;
+        }
+        .footer {
+            background-color: #d9d2e9;
+            text-align: center;
+            font-weight: bold;
+        }
+        .active {
+            background-color: #ffffff;
+            color: orange;
+            font-weight: bold;
+        }
+        .row1 {
+            background-color: #f6dbb7;
+        }
+        .row2 {
+            background-color: #f6dbb7;
+        }
+        .row3 {
+            background-color: #ddebf7;
+        }
+        .row4 {
+            background-color: #ddebf7;
+        }
+        .row5 {
+            background-color: #d9ead3;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="5" class="header">Dane komputerowe - Tymur Aranzhii 1p 1g</th>
+        </tr>
+        <tr>
+            <th>Model karty graficznej</th>
+            <th>Taktowanie bazowe</th>
+            <th>Rozmiar pamięci</th>
+            <th>Szyna pamięci</th>
+            <th>Typ chłodzenia</th>
+        </tr>
+        <tr class="row1">
+            <td>NVIDIA GeForce RTX 3080</td>
+            <td>1440</td>
+            <td>10</td>
+            <td>320</td>
+            <td rowspan="5" class="active">Aktywne</td>
+        </tr>
+        <tr class="row2">
+            <td>AMD Radeon RX 6800 XT</td>
+            <td>1825</td>
+            <td>16</td>
+            <td>256</td>
+        </tr>
+        <tr class="row3">
+            <td>NVIDIA GeForce GTX 1660 Ti</td>
+            <td>1500</td>
+            <td>6</td>
+            <td>192</td>
+        </tr>
+        <tr class="row4">
+            <td>AMD Radeon RX 5700 XT</td>
+            <td>1605</td>
+            <td>8</td>
+            <td>256</td>
+        </tr>
+        <tr class="row5">
+            <td>NVIDIA GeForce RTX 4090</td>
+            <td>2230</td>
+            <td>24</td>
+            <td>384</td>
+        </tr>
+        <tr>
+            <td colspan="5" class="footer">Dane komputerowe</td>
+        </tr>
+    </table>
+</body>
+</html>
